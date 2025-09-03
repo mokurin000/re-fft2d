@@ -9,3 +9,5 @@ pub mod slice;
 
 #[cfg(feature = "nalgebra")]
 pub mod nalgebra;
+
+pub use rustfft::num_complex::Complex;
