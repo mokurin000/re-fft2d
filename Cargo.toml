@@ -1,9 +1,7 @@
 [package]
 name = "fft2d"
 version = "0.1.1"
-authors = [
-    "Matthieu Pizenberg <matthieu.pizenberg@gmail.com>",
-]
+authors = ["Matthieu Pizenberg <matthieu.pizenberg@gmail.com>"]
 edition = "2021"
 description = "Fourier transform for 2D data such as images"
 readme = "README.md"
@@ -12,24 +10,26 @@ homepage = "https://github.com/mpizenberg/fft2d"
 license = "MPL-2.0"
 keywords = ["fft", "fft2d", "fourier", "dct", "image"]
 categories = ["algorithms", "graphics", "computer-vision"]
-exclude = [
-    "data/",
-    ".github",
-]
+exclude = ["data/", ".github"]
 
 [features]
 default = []
-parallel = [ "rayon" ]
+parallel = ["rayon"]
 
 [dependencies]
-rustfft = "6.0.1"
-rustdct = { version = "0.6.0", optional = true }
-nalgebra = { version = "0.29.0", optional = true, default-features = false, features = ["std"] }
+rustfft = "6.4.0"
+rustdct = { version = "0.7.1", optional = true }
+nalgebra = { version = "0.34.0", optional = true, default-features = false, features = [
+    "std",
+] }
 rayon = { version = "1.7", optional = true }
 
 [dev-dependencies]
-show-image = { version = "0.10.1", features = ["image"] }
-image = { version = "0.23.14", default-features = false, features = ["jpeg", "png"] }
+show-image = { version = "=0.14.0", features = ["image"] }
+image = { version = "0.25.6", default-features = false, features = [
+    "jpeg",
+    "png",
+] }
 
 [[example]]
 name = "low_pass"
