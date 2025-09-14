@@ -2,7 +2,7 @@
 
 use std::io::{BufWriter, Write};
 
-use fft2d::nalgebra::dcst::{dct_2d, idct_2d};
+use re_fft2d::nalgebra::dcst::{dct_2d, idct_2d};
 use image::{GrayImage, ImageBuffer, Luma, Primitive};
 use nalgebra::{
     allocator::Allocator, DMatrix, DefaultAllocator, Dim, MatrixView as MatrixSlice, Scalar,

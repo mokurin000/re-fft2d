@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MPL-2.0
 
-use fft2d::slice::dcst::{dct_2d, idct_2d};
 use image::GrayImage;
+use re_fft2d::slice::dcst::{dct_2d, idct_2d};
 use show_image::create_window;
 
 #[show_image::main]

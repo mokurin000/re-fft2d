@@ -1,12 +1,15 @@
 [package]
-name = "fft2d"
+name = "re-fft2d"
 version = "0.1.1"
-authors = ["Matthieu Pizenberg <matthieu.pizenberg@gmail.com>"]
+authors = [
+    "Matthieu Pizenberg <matthieu.pizenberg@gmail.com>",
+    "mokurin000 <mokurin000@gmail.com>",
+]
 edition = "2021"
 description = "Fourier transform for 2D data such as images"
 readme = "README.md"
-repository = "https://github.com/mpizenberg/fft2d"
-homepage = "https://github.com/mpizenberg/fft2d"
+repository = "https://github.com/mokurin000/re-fft2d"
+homepage = "https://github.com/mokurin000/re-fft2d"
 license = "MPL-2.0"
 keywords = ["fft", "fft2d", "fourier", "dct", "image"]
 categories = ["algorithms", "graphics", "computer-vision"]

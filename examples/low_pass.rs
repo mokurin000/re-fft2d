@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MPL-2.0
 
-use fft2d::slice::{fft_2d, fftshift, ifft_2d, ifftshift};
+use re_fft2d::slice::{fft_2d, fftshift, ifft_2d, ifftshift};
 
 use image::GrayImage;
 use rustfft::num_complex::Complex;
